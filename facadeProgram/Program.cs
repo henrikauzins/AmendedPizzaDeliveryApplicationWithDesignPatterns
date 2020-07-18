@@ -192,6 +192,7 @@ namespace PizzaDeliveryProgram
 
                     //asks customer what pizza they would like
                     Console.WriteLine("what pizza would you like");
+                    Console.WriteLine("pizzas that are available are margherita, pepperoni, hawaiian, meat feast, bbq chicken and vegetarian");
                     pizzaName = Console.ReadLine();
 
                     while (true) {
@@ -252,6 +253,7 @@ namespace PizzaDeliveryProgram
 
                     //asks customer what topping they would like
                     Console.WriteLine("what topping would you like?");
+                    Console.WriteLine("toppings available are sausage, anchovies and extra cheese");
                     topping = Console.ReadLine();
 
                     // runs until existing topping is selected
@@ -284,6 +286,7 @@ namespace PizzaDeliveryProgram
 
 
                     Console.WriteLine("what size base would you like for your pizza");
+                    Console.WriteLine("sizes available are small, medium or large");
                     pizzaBase = Console.ReadLine();
 
                     while (true)
@@ -314,6 +317,9 @@ namespace PizzaDeliveryProgram
                    //asks customer what side they would like
 
                     Console.WriteLine("what side would you like with your order?");
+                    Console.WriteLine("sides available are doughballs, chicken wings and garlic bread");
+                   
+                   
                     sides = Console.ReadLine();
 
                     while (true)
@@ -341,6 +347,7 @@ namespace PizzaDeliveryProgram
 
                     //asks drinks what side they would like
                     Console.WriteLine("what drink would you like with your order?");
+                    Console.WriteLine("drinks available are coca cola, water or sprite");
                     drink = Console.ReadLine();
 
                     while (true)
@@ -413,6 +420,9 @@ namespace PizzaDeliveryProgram
                         cusOrderSpec.Remove("sName");
                         cusOrderSpec.Remove("dName");
 
+                        // clears the final price list
+                        finalOrderPrice.Clear();
+
                         orderNumber = orderNumber = 0;
                     }
                 }
@@ -472,8 +482,9 @@ namespace PizzaDeliveryProgram
                             cusOrderSpec.Remove("base");
                             cusOrderSpec.Remove("sName");
                             cusOrderSpec.Remove("dName");
-                            
 
+                            // clears the final price list
+                            finalOrderPrice.Clear();
 
                         }
                         else
