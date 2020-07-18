@@ -208,8 +208,10 @@ namespace PizzaDeliveryProgram
                         }
                         else
                         {
-                            Console.WriteLine("this pizza is not offer :(");
-                            
+                            Console.WriteLine("this pizza is not offer");
+                            Console.WriteLine("what pizza would you like");
+                            pizzaName = Console.ReadLine();
+
                         }
                     }
 
